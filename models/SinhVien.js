@@ -1,4 +1,4 @@
-var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenluyen, loaisinhvien) { //Lớp đối tượng sinh viên
+var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenluyen, loaisinhvien, sex) { //Lớp đối tượng sinh viên
     this.maSinhVien = masv;
     this.tenSinhVien = tensv;
     this.email = email;
@@ -7,6 +7,10 @@ var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenlu
     this.diemHoa = diemhoa;
     this.diemRenLuyen = diemrenluyen;
     this.loaiSinhVien = loaisinhvien;
+    this.xepLoai = function(){
+        return 'Kem';
+    };
+    this.sex = sex;
     this.sinhVienHuy == sinhVienHai;
     this.sinhVienHai == sinhVienKai;
     this.tinhDiemTrungBinh = () => {
