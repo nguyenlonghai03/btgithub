@@ -16,5 +16,6 @@ var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenlu
     this.tinhDiemTrungBinh = () => {
         var dtb = (Number(this.diemHoa) + Number(this.diemLy) + Number(this.diemToan)) / 3;
         return dtb;
+        return 'Huy';
     }
 }
