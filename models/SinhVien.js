@@ -7,6 +7,7 @@ var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenlu
     this.diemHoa = diemhoa;
     this.diemRenLuyen = diemrenluyen;
     this.loaiSinhVien = loaisinhvien;
+    this.sinhVienHuy == sinhVienX;
     this.xepLoai = function() {
         return 'Kem';
     };
