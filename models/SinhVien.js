@@ -1,4 +1,4 @@
-var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenluyen, loaisinhvien) { //Lớp đối tượng sinh viên
+var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenluyen, loaisinhvien, sex) { //Lớp đối tượng sinh viên
     this.maSinhVien = masv;
     this.tenSinhVien = tensv;
     this.email = email;
@@ -8,6 +8,11 @@ var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenlu
     this.diemRenLuyen = diemrenluyen;
     this.loaiSinhVien = loaisinhvien;
     this.sinhVienHuy == sinhVienX;
+    this.xepLoai = function(){
+        return 'Kem';
+    };
+    this.sex = sex;
+    this.sinhVienHuy == sinhVienHai;
     this.sinhVienHai == sinhVienKai;
     this.tinhDiemTrungBinh = () => {
         var dtb = (Number(this.diemHoa) + Number(this.diemLy) + Number(this.diemToan)) / 3;
@@ -15,3 +20,4 @@ var SinhVien = function(masv, tensv, email, diemtoan, diemhoa, diemly, diemrenlu
         return 'Huy';
     }
 }
+
